@@ -1,0 +1,58 @@
+<!-- Preloader HTML with animated wave inside wavy VENTURA text -->
+<div id="preloader">
+  <svg viewBox="0 0 800 200" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <!-- Define a wavy text path -->
+      <path id="wavePath" d="M 0 100 Q 100 60 200 100 T 400 100 T 600 100 T 800 100" />
+
+      <!-- Define wave shape for fill -->
+      <symbol id="wave">
+        <path d="M0 20 Q 40 0 80 20 T 160 20 T 240 20 T 320 20 T 400 20 V100 H0 Z"></path>
+      </symbol>
+
+      <!-- Clip path for the text -->
+      <clipPath id="text-clip">
+        <text font-size="70" font-weight="bold" fill="#000">
+          <textPath href="#wavePath" startOffset="50%" text-anchor="middle">
+            VENTURA
+          </textPath>
+        </text>
+      </clipPath>
+    </defs>
+
+    <!-- Outline text in the background -->
+    <text font-size="70" font-weight="bold" fill="#1e6aa6" opacity="0.2">
+      <textPath href="#wavePath" startOffset="50%" text-anchor="middle">
+        VENTURA
+      </textPath>
+    </text>
+
+    <!-- Water wave filling effect inside the text -->
+    <g clip-path="url(#text-clip)">
+      <!-- Darker wave -->
+      <use xlink:href="#wave" fill="#1e6aa6">
+        <animateTransform attributeName="transform" type="translate" from="-400 60" to="0 60" dur="4s" repeatCount="indefinite"/>
+      </use>
+      <!-- Lighter wave -->
+      <use xlink:href="#wave" fill="#4cbbe9" opacity="0.6">
+        <animateTransform attributeName="transform" type="translate" from="0 60" to="400 60" dur="4s" repeatCount="indefinite"/>
+      </use>
+    </g>
+  </svg>
+</div>
+
+<style>
+  /* Preloader full screen */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a1d5f; /* Dark navy background from logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+</style>

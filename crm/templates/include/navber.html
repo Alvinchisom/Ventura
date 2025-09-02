@@ -1,0 +1,54 @@
+{% load static %}
+<nav class="gtco-nav navbar" role="navigation">
+  <div class="gtco-container">
+    <!-- Hamburger CSS -->
+<style>
+  .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+  }
+  .navbar-toggle {
+    border-color: transparent !important;
+  }
+
+  /* Remove hover effect from navbar links */
+  .navbar-nav > li > a,
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus,
+  .navbar-nav > li > a:active {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  /* Center logo vertically */
+  .navbar-brand img {
+    vertical-align: middle;
+  }
+</style>
+
+
+    <!-- Navbar Header (Logo + Hamburger) -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Logo -->
+<a class="navbar-brand" href="{% url 'home' %}">
+    <img src="{% static 'image/VENTURA.jpg' %}" alt="VENTURA" class="img-responsive" style="height:50px; display:inline-block;">
+</a>
+
+    </div>
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+        <li class="active"><a href="{% url 'about' %}">About</a></li>
+        <li class="active"><a href="{% url 'services' %}">Services</a></li>
+        <li class="active"><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

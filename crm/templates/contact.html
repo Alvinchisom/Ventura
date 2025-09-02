@@ -1,0 +1,74 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<header id="gtco-header" class="gtco-cover text-center" role="banner"
+        style="background-image: url('{% static 'image/wallpaperflare.com_wallpaper.jpg' %}'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; position: relative;">
+  <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+  <div class="gtco-container" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="display-t">
+          <div class="display-tc">
+            <h1 class="animate-box" data-animate-effect="fadeInUp">Get in Touch</h1>
+            <h2 class="animate-box" data-animate-effect="fadeInUp">
+              We’re here to support your business growth
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Contact Information -->
+<div class="gtco-section border-bottom">
+  <div class="gtco-container">
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>Contact Information</h2>
+        <p>Reach out to us through the details below and let’s discuss how we can work together.</p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Address -->
+      <div class="col-md-6 col-sm-6 animate-box">
+        <div class="feature-left">
+          <i class="fa-solid fa-location-dot fa-2x mb-2"></i>
+          <p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=6+Taiwo+Ishola+Street+Lekki+Phase+1+Lagos+Nigeria" target="_blank">
+              <strong>African Talent Outsourcing Agency</strong><br>
+              6 Taiwo Ishola Street,<br> Lekki Phase 1, Lagos Nigeria
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6 col-sm-6 animate-box">
+        <div class="feature-left">
+          <i class="icon-mail2 fa-2x mb-2"></i>
+          <p><a href="mailto:admin@vtocompany.com"><strong>admin@vtocompany.com</strong></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Map -->
+<div class="gtco-section border-top">
+  <div class="gtco-container">
+    <h3 class="text-center">Find Us Here</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.681093193726!2d3.482298!3d6.440438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4dc1234567%3A0xabcdef123456789!2s6%20Taiwo%20Ishola%20St%2C%20Lekki%20Phase%201%2C%20Lagos!5e0!3m2!1sen!2sng!4v1693799999999!5m2!1sen!2sng"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

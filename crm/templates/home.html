@@ -1,0 +1,277 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+<header id="gtco-header" class="gtco-cover text-center" role="banner"
+        style="background-image: url('{% static 'image/wallpaperflare.com_wallpaper.jpg' %}');
+               background-size: cover; background-position: center; background-repeat: no-repeat;
+               min-height: 100vh; position: relative;">
+  <div class="overlay"
+       style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </div>
+  <div class="gtco-container" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="display-t">
+          <div class="display-tc">
+            <h1 class="animate-box" data-animate-effect="fadeInUp"
+                style="color: white; font-size: 3.5rem; font-weight: bold;">
+              Connecting Talent, Powering Possibilities
+            </h1>
+            <h2 class="animate-box" data-animate-effect="fadeInUp" style="color: #f0f0f0;">
+              Your trusted partner in workforce outsourcing, talent management, and staffing solutions.
+            </h2>
+            <p class="animate-box" data-animate-effect="fadeInUp">
+              <a href="{% url 'contact' %}" class="btn btn-white btn-lg btn-outline"
+                 style="padding: 12px 30px; font-size: 1.1rem;">Get In Touch</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mission, Vision, Values -->
+<div id="gtco-features" class="gtco-section">
+  <div class="gtco-container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+        <h2>Our Core</h2>
+        <p>At VTO, we redefine workforce outsourcing by blending innovation with people-first values.</p>
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <div class="row animate-box" data-animate-effect="fadeInLeft">
+      <div class="col-md-6">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Mission"><!-- Image Left -->
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h3>Mission</h3>
+          <p>To empower businesses by delivering agile, scalable, and reliable workforce outsourcing solutions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vision -->
+    <div class="row animate-box" data-animate-effect="fadeInRight" style="margin-top: 40px;">
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h3>Vision</h3>
+          <p>To be Africa’s leading partner in talent management and outsourcing, transforming businesses and careers.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Vision"><!-- Image Right -->
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="row animate-box" data-animate-effect="fadeInLeft" style="margin-top: 40px;">
+      <div class="col-md-6">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Core Values"><!-- Image Left -->
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h3>Core Values</h3>
+          <p>Integrity, Innovation, Excellence, People First, and Partnership.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Why Choose Us -->
+<div class="gtco-section">
+  <div class="gtco-container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+        <h2>Why Choose VTO?</h2>
+        <p>We go beyond staffing — we deliver efficiency, compliance, and long-term growth for your business.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-center animate-box" data-animate-effect="fadeIn">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Industry Expertise"><!-- Image Placeholder -->
+          <h3>Industry Expertise</h3>
+          <p>Deep knowledge of diverse industries ensures we understand your unique challenges.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-center animate-box" data-animate-effect="fadeIn">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Compliance"><!-- Image Placeholder -->
+          <h3>Compliance & Reliability</h3>
+          <p>We handle payroll, HR policies, and labor laws so you stay compliant and stress-free.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-center animate-box" data-animate-effect="fadeIn">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Scalability"><!-- Image Placeholder -->
+          <h3>Scalability</h3>
+          <p>From small teams to large workforces, we scale solutions to your business growth.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-center animate-box" data-animate-effect="fadeIn">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Proven Results"><!-- Image Placeholder -->
+          <h3>Proven Results</h3>
+          <p>Our clients achieve efficiency, cost savings, and measurable success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Industries Served -->
+<div id="gtco-products">
+  <div class="gtco-container">
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+        <h2>Industries We Serve</h2>
+        <p>Our tailored workforce outsourcing solutions cut across diverse industries:</p>
+      </div>
+    </div>
+    <div class="row animate-box">
+      <div class="owl-carousel owl-carousel-carousel">
+        <div class="item">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Oil & Gas"><!-- Image Placeholder -->
+          <h3><i class="ti-briefcase"></i> Oil & Gas</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="IT & Tech"><!-- Image Placeholder -->
+          <h3><i class="ti-desktop"></i> IT & Tech</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Finance"><!-- Image Placeholder -->
+          <h3><i class="ti-money"></i> Finance</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Logistics"><!-- Image Placeholder -->
+          <h3><i class="ti-package"></i> Logistics</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="FMCG"><!-- Image Placeholder -->
+          <h3><i class="ti-bar-chart"></i> FMCG</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Construction"><!-- Image Placeholder -->
+          <h3><i class="ti-hummer"></i> Construction</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Customer Service"><!-- Image Placeholder -->
+          <h3><i class="ti-support"></i> Customer Service</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fun Facts -->
+<div id="gtco-counter" class="gtco-section">
+  <div class="gtco-container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+        <h2>Our Impact</h2>
+        <p>We are proud of the measurable value we create for clients and professionals.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-user"></i></span>
+          <span class="counter js-counter" data-from="0" data-to="5000" data-speed="5000" data-refresh-interval="50">5000</span>
+          <span class="counter-label">Talents Placed</span>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-face-smile"></i></span>
+          <span class="counter js-counter" data-from="0" data-to="200" data-speed="5000" data-refresh-interval="50">200</span>
+          <span class="counter-label">Happy Clients</span>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-briefcase"></i></span>
+          <span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1000</span>
+          <span class="counter-label">Projects Delivered</span>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-world"></i></span>
+          <span class="counter js-counter" data-from="0" data-to="15" data-speed="5000" data-refresh-interval="50">15</span>
+          <span class="counter-label">Countries Reached</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials -->
+<div class="gtco-section border-bottom">
+  <div class="gtco-container">
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>What Our Clients Say</h2>
+        <p>We are proud to be trusted by businesses across multiple industries.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-circle" alt="Client 1"><!-- Image Placeholder -->
+        <blockquote>
+          <p>&ldquo;VTO helped us expand our team quickly while staying compliant with labor laws. A reliable partner!&rdquo;</p>
+          <p><cite>&mdash; HR Manager, Oil & Gas</cite></p>
+        </blockquote>
+      </div>
+      <div class="col-md-4 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-circle" alt="Client 2"><!-- Image Placeholder -->
+        <blockquote>
+          <p>&ldquo;Their outsourcing solution reduced our costs and improved efficiency across departments.&rdquo;</p>
+          <p><cite>&mdash; COO, Logistics Firm</cite></p>
+        </blockquote>
+      </div>
+      <div class="col-md-4 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-circle" alt="Client 3"><!-- Image Placeholder -->
+        <blockquote>
+          <p>&ldquo;Professional, responsive, and innovative. They helped us achieve our goals faster than expected.&rdquo;</p>
+          <p><cite>&mdash; CEO, Tech Startup</cite></p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="gtco-section">
+  <div class="gtco-container text-center animate-box">
+    <h2>Partner With VTO Today</h2>
+    <p>Let us handle your workforce needs while you focus on scaling your business.</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a></p>
+  </div>
+</div>
+
+<!-- Slideshow Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('gtco-header');
+    const images = [
+      "{% static 'image/wallpaperflare.com_wallpaper.jpg' %}",
+      "{% static 'image/marv.jpg' %}",
+      "{% static 'image/marv2.jpg' %}",
+      "{% static 'image/gear1.jpg' %}"
+    ];
+    let current = 0;
+
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      header.style.backgroundImage = `url('${images[current]}')`;
+    }, 2000); // change every 2 seconds
+  });
+</script>
+
+{% endblock %}

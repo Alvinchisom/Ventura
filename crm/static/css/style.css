@@ -28,6 +28,20 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px; /* keeps rounded corners */
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* makes sure image fills nicely */
+  display: block;
+}
+
 .offcanvas #page {
   overflow: hidden;
   position: absolute;

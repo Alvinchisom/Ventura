@@ -1,224 +1,353 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-<body>
-	<header id="gtco-header" class="gtco-cover text-center" role="banner"
-			style="background-image: url('{% static 'image/marv2.jpg' %}'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; position: relative;">
-	  <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-	  <div class="gtco-container" style="position: relative; z-index: 2;">
-		<div class="row">
-		  <div class="col-md-12 text-center">
-			<div class="display-t">
-			  <div class="display-tc">
-				<h1 class="animate-box" data-animate-effect="fadeInUp">About Us</h1>
-				<h2 class="animate-box" data-animate-effect="fadeInUp">Your Trusted African Talent Outsourcing Partner</h2>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</header>
+<header id="gtco-header" class="gtco-cover text-center" role="banner"
+        style="background-image: url('{% static 'image/marv2.jpg' %}');
+               background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; position: relative;">
+  <div class="overlay"
+       style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </div>
 
-	<!-- Our Story -->
-	<div id="gtco-history" class="gtco-section border-bottom animate-box">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Our Story</h2>
-					<p>VTO is Africa’s premier talent outsourcing agency, bridging African professionals with global markets.
-					We help organizations scale faster, cut costs, and access world-class skills without borders.
-					With deep networks and advanced technology, we connect the right talent to the right opportunities — from startups to Fortune 500 companies.</p>
-					<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Our Story">
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="gtco-container" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="display-t">
+          <div class="display-tc">
+            <h1 class="animate-box" data-animate-effect="fadeInUp">About Us</h1>
+            <h2 class="animate-box" data-animate-effect="fadeInUp">
+              Your Trusted African Talent Outsourcing Partner
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-		<div class="gtco-section border-bottom">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Benefits </h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="AI Matching"><!-- Image Placeholder -->
-						<i class="ti-user"></i>
-						<h3>Tailored Talent Solutions </h3>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Networks"><!-- Image Placeholder -->
-						<i class="ti-import"></i>
-						<h3>Seamless Onboarding </h3>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Vetting"><!-- Image Placeholder -->
-						<i class="ti-loop"></i>
-						<h3>Flexible Engagement Models</h3>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Support"><!-- Image Placeholder -->
-						<i class="ti-world"></i>
-						<h3> Global Support</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- Our Story -->
+<div id="gtco-history" class="gtco-section border-bottom animate-box">
+  <div class="gtco-container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>Our Story</h2>
+        <p>
+          VTO is Africa’s premier talent outsourcing agency, bridging African
+          professionals with global markets. We help organizations scale faster,
+          cut costs, and access world-class skills without borders. With deep
+          networks and advanced technology, we connect the right talent to the
+          right opportunities — from startups to Fortune 500 companies.
+        </p>
+        <img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Our Story">
+      </div>
+    </div>
+  </div>
+</div>
 
-	<!-- Why We Stand Out -->
-	<div class="gtco-section border-bottom">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Why We Stand Out</h2>
-					<p>We don’t just connect businesses with talent — we ensure long-term success.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="AI Matching"><!-- Image Placeholder -->
-						<i class="ti-crown"></i>
-						<h3>AI-Powered Matching</h3>
-						<p>Our platform leverages AI to connect businesses with the right-fit talent, faster.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Networks"><!-- Image Placeholder -->
-						<i class="ti-world"></i>
-						<h3>Deep Networks</h3>
-						<p>We have access to a broad pool of African professionals across industries.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Vetting"><!-- Image Placeholder -->
-						<i class="ti-check-box"></i>
-						<h3>Rigorous Vetting</h3>
-						<p>We verify skills, experience, and reliability to ensure top-quality hires.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box">
-					<div class="feature-center">
-						<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Support"><!-- Image Placeholder -->
-						<i class="ti-support"></i>
-						<h3>Ongoing Support</h3>
-						<p>Dedicated account managers and transparent billing for long-term growth.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- Benefits -->
+<div class="gtco-section border-bottom">
+  <div class="gtco-container">
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>Benefits</h2>
+      </div>
+    </div>
 
-	<!-- Our Approach -->
-	<div class="gtco-section">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Our Approach</h2>
-					<p>We partner with clients to ensure flexible, reliable, and scalable workforce solutions.
-					Our approach is built on transparency, technology, and strong after-placement support.</p>
-					<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Our Approach"><!-- Image Placeholder -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<ul class="list-unstyled">
-						<li><i class="ti-user"></i> Dedicated Account Management</li>
-						<li><i class="ti-stats-up"></i> Scalability to match growth</li>
-						<li><i class="ti-shield"></i> Transparent & secure processes</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<ul class="list-unstyled">
-						<li><i class="ti-reload"></i> Flexible outsourcing models</li>
-						<li><i class="ti-wallet"></i> Cost-effective solutions</li>
-						<li><i class="ti-hand-open"></i> Strong after-placement support</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+      <!-- Benefit 1 -->
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-user"></i></span>
+          <img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Tailored Talent">
+          <h3>Tailored Talent Solutions</h3>
+        </div>
+      </div>
 
-	<!-- Quality & Compliance -->
-	<div class="gtco-section border-bottom">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Quality & Compliance</h2>
-					<p>We are committed to global best practices, service guarantees, and safeguarding client trust.</p>
-					<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Compliance"><!-- Image Placeholder -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center">
-					<i class="ti-cup"></i>
-					<h3>Service Guarantee</h3>
-					<p>We ensure satisfaction with every engagement, backed by performance guarantees.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<i class="ti-lock"></i>
-					<h3>Data Protection</h3>
-					<p>Strict compliance with international data security and confidentiality standards.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<i class="ti-medall-alt"></i>
-					<h3>Regular Audits</h3>
-					<p>We monitor and evaluate talent to maintain top-tier quality for our clients.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+      <!-- Benefit 2 -->
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-import"></i></span>
+          <img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Onboarding">
+          <h3>Seamless Onboarding</h3>
+        </div>
+      </div>
 
-	<!-- Why Choose Us -->
-	<div class="gtco-section">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Why Choose Us</h2>
-					<p>We’re not just another outsourcing firm — we are a proactive partner in your success.
-					By choosing us, you gain a reliable, technology-driven, and scalable partner committed to excellence.</p>
-					<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Why Choose Us"><!-- Image Placeholder -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-sm-6 text-center">
-					<i class="ti-thought"></i>
-					<h4>Proactive Partnership</h4>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center">
-					<i class="ti-thumb-up"></i>
-					<h4>Reliability</h4>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center">
-					<i class="ti-light-bulb"></i>
-					<h4>Technology-Driven</h4>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center">
-					<i class="ti-infinite"></i>
-					<h4>Scalability</h4>
-				</div>
-			</div>
-		</div>
-	</div>
+      <!-- Benefit 3 -->
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-loop"></i></span>
+          <img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Flexibility">
+          <h3>Flexible Engagement Models</h3>
+        </div>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div class="col-md-3 col-sm-6 animate-box">
+        <div class="feature-center">
+          <span class="icon"><i class="ti-world"></i></span>
+          <img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Global Support">
+          <h3>Global Support</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- STANDOUT FEATURES -->
+<div class="gtco-section border-bottom">
+  <div class="gtco-container">
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>STANDOUT FEATURES</h2>
+        <p>We don’t just connect businesses with talent — we ensure long-term success.</p>
+		  <img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Support">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- AI Powered Matching -->
+      <div class="col-md-4 col-sm-6 animate-box">
+        <div class="feature-center">
+			<span class="icon"><i class="ti-crown"></i></span>
+          <h3>AI POWERED MATCHING ENGINE</h3>
+          <p>
+            Our proprietary algorithm sifts through skills, experience, and cultural fit
+            to surface the best candidates in minutes — not weeks.
+          </p>
+        </div>
+      </div>
+
+      <!-- End-to-End Visibility -->
+      <div class="col-md-4 col-sm-6 animate-box">
+        <div class="feature-center">
+			<span class="icon"><i class="ti-eye"></i></span>
+          <h3>END TO END VISIBILITY</h3>
+          <p>
+            From sourcing to offboarding, every step is tracked in real time via
+            intuitive dashboards and consolidated reports.
+          </p>
+        </div>
+      </div>
+
+      <!-- Rapid Turnaround -->
+      <div class="col-md-4 col-sm-6 animate-box">
+        <div class="feature-center">
+			<span class="icon"><i class="ti-timer"></i></span>
+          <h3>RAPID TURNAROUND & BACK FILL GUARANTEE</h3>
+          <p>
+            We stand behind our placements: average time to fill is just 10–15 business days,
+            and if a resource needs replacing, we back-fill within 5 days at no extra cost.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+      <!-- Flexible Engagement -->
+      <div class="col-md-6 col-sm-6 animate-box">
+        <div class="feature-center">
+			<span class="icon"><i class="ti-exchange-vertical"></i></span>
+          <h3>FLEXIBLE ENGAGEMENT MODELS</h3>
+          <p>
+            Whether you need pay-as-you-go contractors, fixed-term teams,
+            or long-term managed services, we tailor terms and SLAs to your project’s unique demands.
+          </p>
+        </div>
+      </div>
+
+      <!-- Global Reach -->
+      <div class="col-md-6 col-sm-6 animate-box">
+        <div class="feature-center">
+			<span class="icon"><i class="ti-world"></i></span>
+          <h3>GLOBAL REACH, LOCAL EXPERTISE</h3>
+          <p>
+            We’ve successfully serviced U.S.-based clients — combining deep understanding
+            of local talent markets with international standards of delivery.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quality & Compliance -->
+<div class="gtco-section border-bottom">
+  <div class="gtco-container">
+
+    <!-- Section Heading -->
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>Quality & Compliance</h2>
+        <p>
+          At Ventura Talent Outsourcing, maintaining the highest standards of
+          service integrity and data protection is non-negotiable. Here’s how we
+          ensure excellence at every turn.
+        </p>
+        <img src="{% static 'image/marv2.jpg' %}"
+             class="img-responsive img-rounded"
+             alt="Compliance">
+      </div>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-4 text-center animate-box">
+        <span class="icon"><i class="ti-cup"></i></span>
+        <h3>BACKGROUND & VERIFICATION</h3>
+        <p>
+          Every candidate undergoes a rigorous screening process, from education
+          and professional license verification to comprehensive criminal record
+          checks — so you can onboard with confidence.
+        </p>
+      </div>
+
+      <div class="col-md-4 text-center animate-box">
+        <span class="icon"><i class="ti-lock"></i></span>
+        <h3>CERTIFICATIONS & AUDITS</h3>
+        <p>
+          While we’re embarking on our first year, we have annual external audits
+          on the roadmap, so you can trust we’ll align with global benchmarks as
+          we grow.
+        </p>
+      </div>
+
+      <div class="col-md-4 text-center animate-box">
+        <span class="icon"><i class="ti-shield"></i></span>
+        <h3>DATA SECURITY & PRIVACY</h3>
+        <p>
+          We safeguard your information with industry-standard encryption, secure
+          document repositories, and strict access controls — ensuring that
+          confidential data stays protected at all times.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 2 (Centered) -->
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2 text-center animate-box">
+        <span class="icon"><i class="ti-thumb-up"></i></span>
+        <h3>SERVICE GUARANTEE</h3>
+        <p>
+          We back our commitments with clear guarantees around turnaround times,
+          payroll accuracy, and candidate replacements — so you know exactly
+          what to expect, every time.
+        </p>
+      </div>
+
+      <div class="col-md-4 text-center animate-box">
+        <span class="icon"><i class="ti-loop"></i></span>
+        <h3>CONTINUOUS IMPROVEMENT</h3>
+        <p>
+          Your feedback drives us. We routinely gather client and candidate
+          insights through surveys and debriefs, using those learnings to refine
+          our processes and elevate your experience with each engagement.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Why Choose Us -->
+<div class="gtco-section">
+  <div class="gtco-container">
+
+    <!-- Section Heading -->
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+        <h2>Why Choose Us</h2>
+        <p>
+          We’re not just another outsourcing firm — we are a proactive partner in your success.
+          By choosing us, you gain a reliable, technology-driven, and scalable partner committed to excellence.
+        </p>
+        <img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Why Choose Us">
+      </div>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <span class="icon"><i class="ti-thought"></i></span>
+        <h4>DEEP LOCAL EXPERTISE & GLOBAL STANDARDS</h4>
+        <p>
+          With rooted insight in African talent and precise, repeatable processes,
+          we guarantee world-class professionals with each engagement.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <span class="icon"><i class="ti-thumb-up"></i></span>
+        <h4>TECHNOLOGY DRIVEN EFFICIENCY</h4>
+        <p>
+          Our AI-enhanced matching and real-time dashboards reduce time to hire,
+          maximize utilization, and keep you informed at every stage.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <span class="icon"><i class="ti-light-bulb"></i></span>
+        <h4>SEAMLESS SCALABILITY</h4>
+        <p>
+          From single consultants to full remote teams, we scale your resources
+          up or down on demand — helping you navigate project peaks and budget cycles with ease.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <span class="icon"><i class="ti-infinite"></i></span>
+        <h4>PROACTIVE PARTNERSHIP</h4>
+        <p>
+          Beyond transactional staffing, we become an extension of your team;
+          anticipating needs, troubleshooting challenges, and offering strategic workforce insights.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <span class="icon"><i class="ti-receipt"></i></span>
+        <h4>TRANSPARENT & PREDICTABLE PRICING</h4>
+        <p>
+          Monthly consolidated invoices and clear rate cards mean no surprises —
+          just straightforward billing you can trust.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <span class="icon"><i class="ti-shield"></i></span>
+        <h4>COMMITMENT TO QUALITY & RELIABILITY</h4>
+        <p>
+          We commit to fast turnaround, precise payroll, and reliable back-fill,
+          holding ourselves to the highest standards.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 3 (Client Success Stories) -->
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center animate-box">
+        <span class="icon"><i class="ti-comments-smiley"></i></span>
+        <h4>CLIENT SUCCESS STORIES</h4>
+        <p>
+          Ventura’s team integrated seamlessly into our project, delivering
+          critical civil engineering support on time and with cost efficiency.
+          – <em>Lu Engineers</em>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 	<!-- Client Success Story -->
 	<div class="gtco-section border-bottom">
 		<div class="gtco-container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Client Success Story</h2>
-					<p>See how our talent solutions have transformed businesses worldwide.</p>
+					<h2>Trusted by Industry Leaders</h2>
+                    <p>Our clients count on us to deliver reliable, scalable talent solutions that drive performance and innovation.</p>
 					<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Client Success Story"><!-- Image Placeholder -->
 				</div>
 			</div>
@@ -233,5 +362,4 @@
 			</div>
 		</div>
 	</div>
-</body>
 {% endblock %}

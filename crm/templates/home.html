@@ -1,7 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-
 <header id="gtco-header" class="gtco-cover text-center" role="banner"
         style="background-image: url('{% static 'image/wallpaperflare.com_wallpaper.jpg' %}');
                background-size: cover; background-position: center; background-repeat: no-repeat;
@@ -87,106 +86,85 @@
   </div>
 </div>
 
-<!-- Why Choose Us -->
-<div class="gtco-section">
-  <div class="gtco-container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-        <h2>Why Choose VTO?</h2>
-        <p>We go beyond staffing — we deliver efficiency, compliance, and long-term growth for your business.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="feature-center animate-box" data-animate-effect="fadeIn">
-          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Industry Expertise"><!-- Image Placeholder -->
-          <h3>Industry Expertise</h3>
-          <p>Deep knowledge of diverse industries ensures we understand your unique challenges.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="feature-center animate-box" data-animate-effect="fadeIn">
-          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Compliance"><!-- Image Placeholder -->
-          <h3>Compliance & Reliability</h3>
-          <p>We handle payroll, HR policies, and labor laws so you stay compliant and stress-free.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="feature-center animate-box" data-animate-effect="fadeIn">
-          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Scalability"><!-- Image Placeholder -->
-          <h3>Scalability</h3>
-          <p>From small teams to large workforces, we scale solutions to your business growth.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="feature-center animate-box" data-animate-effect="fadeIn">
-          <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Proven Results"><!-- Image Placeholder -->
-          <h3>Proven Results</h3>
-          <p>Our clients achieve efficiency, cost savings, and measurable success.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- How It Works (from brochure) -->
 <div class="gtco-section border-top">
   <div class="gtco-container">
+    <!-- Section Heading -->
     <div class="row animate-box">
       <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
         <h2>How It Works</h2>
         <p>Our outsourcing process is simple, seamless, and designed to deliver results.</p>
       </div>
     </div>
+
+    <!-- Row 1 -->
     <div class="row text-center">
-      <div class="col-md-4 animate-box">
-        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 1"><!-- Image Placeholder -->
-        <h3>Step 1: Consultation</h3>
-        <p>We understand your business needs and workforce requirements.</p>
+      <!-- Step 1 -->
+      <div class="col-md-6 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 1">
+        <i class="ti-search fa-2x" style="color:#007BFF; margin-right:10px;"></i>
+        <h3 class="mb-0">DISCOVERY & ALIGNMENT</h3>
+        <p>
+          We kick things off with an informal conversation exploring your objectives, timelines,
+          and team dynamics to shape the perfect engagement plan.
+        </p>
       </div>
-      <div class="col-md-4 animate-box">
-        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 2"><!-- Image Placeholder -->
-        <h3>Step 2: Talent Match</h3>
-        <p>Using deep networks and advanced vetting, we connect you to the right talent.</p>
+
+      <!-- Step 2 -->
+      <div class="col-md-6 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 2">
+        <i class="ti-file fa-2x" style="color:#007BFF; margin-right:10px;"></i>
+        <h3 class="mb-0">TAILORED PROPOSAL</h3>
+        <p>
+          Based on our discussion, we craft a clear, customized proposal outlining scope, deliverables,
+          and pricing so you know exactly what to expect.
+        </p>
       </div>
-      <div class="col-md-4 animate-box">
-        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 3"><!-- Image Placeholder -->
-        <h3>Step 3: Deployment</h3>
-        <p>We onboard, manage, and provide continuous support for smooth integration.</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row text-center" style="margin-top: 40px;">
+      <!-- Step 3 -->
+      <div class="col-md-6 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 3">
+        <i class="ti-user fa-2x" style="color:#007BFF; margin-right:10px;"></i>
+        <h3 class="mb-0">SEAMLESS ONBOARDING</h3>
+        <p>
+          Once we’re aligned, our team handles everything from contract setup to candidate introductions,
+          making sure every detail is in place before work begins.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-md-6 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 4">
+        <i class="ti-loop fa-2x" style="color:#007BFF; margin-right:10px;"></i>
+        <h3 class="mb-0">CONTINUOUS FEEDBACK LOOP</h3>
+        <p>
+          We value open communication, gathering your insights at every stage to fine-tune performance
+          and ensure your satisfaction.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row text-center" style="margin-top: 40px;">
+      <!-- Step 5 (centered) -->
+      <div class="col-md-6 col-md-offset-3 animate-box">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded" alt="Step 5">
+        <i class="ti-check-box fa-2x" style="color:#007BFF; margin-right:10px;"></i>
+        <h3 class="mb-0">SMOOTH TRANSITION & WRAP UP</h3>
+        <p>
+          As projects conclude or evolve, we provide comprehensive handover notes, conduct final debriefs,
+          and stand ready to support your next chapter. Through every step, our goal is to make outsourcing
+          feel effortless so you can focus on what matters most.
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-	<!-- Our Approach -->
-	<div class="gtco-section">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Our Approach</h2>
-					<p>We partner with clients to ensure flexible, reliable, and scalable workforce solutions.
-					Our approach is built on transparency, technology, and strong after-placement support.</p>
-					<img src="{% static 'image/marv2.jpg' %}" class="img-responsive img-rounded" alt="Our Approach"><!-- Image Placeholder -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<ul class="list-unstyled">
-						<li><i class="ti-user"></i> Dedicated Account Management</li>
-						<li><i class="ti-stats-up"></i> Scalability to match growth</li>
-						<li><i class="ti-shield"></i> Transparent & secure processes</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<ul class="list-unstyled">
-						<li><i class="ti-reload"></i> Flexible outsourcing models</li>
-						<li><i class="ti-wallet"></i> Cost-effective solutions</li>
-						<li><i class="ti-hand-open"></i> Strong after-placement support</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+
 
 <!-- Fun Facts -->
 <div id="gtco-counter" class="gtco-section">

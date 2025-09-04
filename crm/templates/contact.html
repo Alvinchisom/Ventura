@@ -1,16 +1,22 @@
 {% extends 'index.html' %}
 {% load static %}
-
 {% block content %}
+
+<!-- Header -->
 <header id="gtco-header" class="gtco-cover text-center" role="banner"
-        style="background-image: url('{% static 'image/wallpaperflare.com_wallpaper.jpg' %}'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; position: relative;">
-  <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+        style="background-image: url('{% static 'image/wallpaperflare.com_wallpaper.jpg' %}');
+               background-size: cover; background-position: center;
+               background-attachment: fixed; height: 100vh; position: relative;">
+  <div class="overlay"
+       style="background-color: rgba(0, 0, 0, 0.5); position: absolute;
+              top: 0; left: 0; width: 100%; height: 100%;">
+  </div>
   <div class="gtco-container" style="position: relative; z-index: 2;">
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="display-t">
           <div class="display-tc">
-            <h1 class="animate-box" data-animate-effect="fadeInUp">Get in Touch</h1>
+            <h1 class="animate-box" data-animate-effect="fadeInUp">Reach Out To Us</h1>
             <h2 class="animate-box" data-animate-effect="fadeInUp">
               We’re here to support your business growth
             </h2>
@@ -21,36 +27,55 @@
   </div>
 </header>
 
-<!-- Contact Information -->
-<div class="gtco-section border-bottom">
+<!-- Getting Started Section -->
+<div class="gtco-section">
   <div class="gtco-container">
+    <!-- Heading -->
     <div class="row animate-box">
       <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-        <h2>Contact Information</h2>
-        <p>Reach out to us through the details below and let’s discuss how we can work together.</p>
+        <h2>Getting Started</h2>
+        <p>Ready to take the next step? Here’s how to kick off your Ventura partnership:</p>
       </div>
     </div>
 
-    <div class="row text-center">
-      <!-- Address -->
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-left">
-          <i class="fa-solid fa-location-dot fa-2x mb-2"></i>
-          <p>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=6+Taiwo+Ishola+Street+Lekki+Phase+1+Lagos+Nigeria" target="_blank">
-              <strong>African Talent Outsourcing Agency</strong><br>
-              6 Taiwo Ishola Street,<br> Lekki Phase 1, Lagos Nigeria
-            </a>
-          </p>
-        </div>
+    <!-- Image on Top -->
+    <div class="row animate-box" style="margin-top: 30px;">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <img src="{% static 'image/gear1.jpg' %}" class="img-responsive img-rounded center-block" alt="Getting Started">
       </div>
+    </div>
 
-      <!-- Email -->
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-left">
-          <i class="icon-mail2 fa-2x mb-2"></i>
-          <p><a href="mailto:admin@vtocompany.com"><strong>admin@vtocompany.com</strong></a></p>
-        </div>
+    <!-- Text Below -->
+    <div class="row animate-box" style="margin-top: 30px;">
+      <div class="col-md-8 col-md-offset-2">
+        <h3>How to Engage</h3>
+        <p>
+          Simply drop us a line via email to outline your project. From there,
+          we’ll propose a tailored engagement plan and walk you through the milestones.
+        </p>
+        <h3>Availability & Response</h3>
+        <p>
+          Our team is on standby to help. Expect a friendly reply within a few business days,
+          and we’ll work together to schedule your consultation at a time that suits you.
+        </p>
+      </div>
+    </div>
+
+    <!-- Connect With Us -->
+    <div class="row animate-box" style="margin-top: 40px;">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h3>Connect With Us</h3>
+        <p>
+          📧 <a href="mailto:admin@vtocompany.com"><strong>admin@vtocompany.com</strong></a><br><br>
+          🔗 <a href="https://linkedin.com/company/ventura-talent-outsourcing" target="_blank">
+            linkedin.com/company/ventura-talent-outsourcing
+          </a><br><br>
+          📍 <a href="https://www.google.com/maps/dir/?api=1&destination=6+Taiwo+Ishola+Street+Lekki+Phase+1+Lagos+Nigeria" target="_blank">
+            <strong>African Talent Outsourcing Agency</strong><br>
+            6 Taiwo Ishola Street,<br> Lekki Phase 1, Lagos Nigeria
+          </a>
+        </p>
+        <p>We look forward to powering your possibilities. Let’s build something great together!</p>
       </div>
     </div>
   </div>
@@ -71,4 +96,5 @@
     </div>
   </div>
 </div>
+
 {% endblock %}

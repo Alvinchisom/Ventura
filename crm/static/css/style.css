@@ -339,14 +339,17 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-cover {
-  height: 900px;
-  background-size: cover;
-  background-position: center center;
+  min-height: 100vh;                /* fill screen */
+  background-size: cover;           /* scale */
+  background-position: center;      /* center image */
   background-repeat: no-repeat;
   position: relative;
-  float: left;
   width: 100%;
+  display: flex;                    /* center content */
+  align-items: center;
+  justify-content: center;
 }
+
 .gtco-cover a {
   color: #3498db;
 }
@@ -1938,3 +1941,63 @@ form label {
 .color-1:hover .case-studies-summary {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* Responsive header adjustments */
+@media screen and (max-width: 768px) {
+  .gtco-cover {
+    min-height: 80vh;               /* shorter height on tablets */
+    background-position: top center; /* show top part of image */
+  }
+
+  #gtco-header h1 {
+    font-size: 2rem !important;
+    padding: 0 15px;
+  }
+
+  #gtco-header h2 {
+    font-size: 1rem !important;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gtco-cover {
+    min-height: 70vh;               /* smaller height for phones */
+  }
+
+  #gtco-header h1 {
+    font-size: 1.6rem !important;
+  }
+
+  #gtco-header h2 {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* === Slideshow Styles === */
+#gtco-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#gtco-header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1.5s ease-in-out; /* smooth fade */
+}
+
+#gtco-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+

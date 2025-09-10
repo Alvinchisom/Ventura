@@ -214,14 +214,14 @@
     </div>
     <div class="row text-center">
       <div class="col-md-4 animate-box">
-        <i class="ti-crown fa-3x"></i>
-        <h3>AI-Powered Talent Matching</h3>
-        <p>We leverage advanced tools to connect you with the right-fit professionals faster.</p>
-      </div>
-      <div class="col-md-4 animate-box">
         <i class="ti-check-box fa-3x"></i>
         <h3>Rigorous Vetting</h3>
         <p>Every talent undergoes background checks, skill verification, and compliance assessments.</p>
+      </div>
+      <div class="col-md-4 animate-box">
+        <i class="ti-crown fa-3x"></i>
+        <h3>AI-Powered Talent Matching</h3>
+        <p>We leverage advanced tools to connect you with the right-fit professionals faster.</p>
       </div>
       <div class="col-md-4 animate-box">
         <i class="ti-shield fa-3x"></i>
@@ -282,6 +282,15 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const header = document.getElementById('gtco-header');
+
+    // Create two layers for smooth fade
+    const bg1 = document.createElement('div');
+    const bg2 = document.createElement('div');
+    bg1.className = 'background';
+    bg2.className = 'background';
+    header.prepend(bg1);
+    header.prepend(bg2);
+
     const images = [
       "{% static 'image/civil.jpg' %}",
       "{% static 'image/team-developers.jpg' %}",
@@ -289,12 +298,28 @@
       "{% static 'image/people in meeting.jpg' %}"
     ];
     let current = 0;
+    let showingBg1 = true;
+
+    // Initialize first background
+    bg1.style.backgroundImage = `url('${images[current]}')`;
+    bg1.style.opacity = 1;
+    bg2.style.opacity = 0;
 
     setInterval(() => {
       current = (current + 1) % images.length;
-      header.style.backgroundImage = `url('${images[current]}')`;
-    }, 2000); // change every 2 seconds
+      if (showingBg1) {
+        bg2.style.backgroundImage = `url('${images[current]}')`;
+        bg2.style.opacity = 1;
+        bg1.style.opacity = 0;
+      } else {
+        bg1.style.backgroundImage = `url('${images[current]}')`;
+        bg1.style.opacity = 1;
+        bg2.style.opacity = 0;
+      }
+      showingBg1 = !showingBg1;
+    }, 4000); // change every 4 seconds (smoother)
   });
 </script>
+
 
 {% endblock %}

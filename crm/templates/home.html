@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <header id="gtco-header" class="gtco-cover text-center" role="banner"
-        style="background-image: url('{% static 'image/civil.jpg' %}');
+        style="background-image: url('{% static 'image/compressed/civil.jpg' %}');
                background-size: cover; background-position: center; background-repeat: no-repeat;
                min-height: 100vh; position: relative;">
   <div class="overlay"
@@ -44,7 +44,7 @@
     <!-- Mission -->
     <div class="row animate-box" data-animate-effect="fadeInLeft">
       <div class="col-md-6">
-        <img src="{% static 'image/mission.jpg' %}" class="img-responsive img-rounded" alt="Mission"><!-- Image Left -->
+        <img src="{% static 'image/compressed/mission.jpg' %}" class="img-responsive img-rounded" alt="Mission"><!-- image/compressed Left -->
       </div>
       <div class="col-md-6 d-flex align-items-center">
         <div>
@@ -67,14 +67,14 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img src="{% static 'image/vision.jpg' %}" class="img-responsive img-rounded" alt="Vision"><!-- Image Right -->
+        <img src="{% static 'image/compressed/vision.jpg' %}" class="img-responsive img-rounded" alt="Vision"><!-- Image Right -->
       </div>
     </div>
 
     <!-- Core Values -->
     <div class="row animate-box" data-animate-effect="fadeInLeft" style="margin-top: 40px;">
       <div class="col-md-6">
-        <img src="{% static 'image/core value.jpg' %}" class="img-responsive img-rounded" alt="Core Values"><!-- Image Left -->
+        <img src="{% static 'image/compressed/core value.jpg' %}" class="img-responsive img-rounded" alt="Core Values"><!-- Image Left -->
       </div>
       <div class="col-md-6 d-flex align-items-center">
         <div>
@@ -101,7 +101,7 @@
     <div class="row text-center">
       <!-- Step 1 -->
       <div class="col-md-6 animate-box">
-        <img src="{% static 'image/tailor.jpg' %}" class="img-responsive img-rounded" alt="Step 2">
+        <img src="{% static 'image/compressed/tailor.jpg' %}" class="img-responsive img-rounded" alt="Step 2">
         <h3 class="mb-0">TAILORED PROPOSAL</h3>
         <p>
           Based on our discussion, we craft a clear, customized proposal outlining scope, deliverables,
@@ -111,7 +111,7 @@
 
       <!-- Step 2 -->
       <div class="col-md-6 animate-box">
-        <img src="{% static 'image/transition.jpg' %}" class="img-responsive img-rounded" alt="Step 5">
+        <img src="{% static 'image/compressed/transition.jpg' %}" class="img-responsive img-rounded" alt="Step 5">
         <h3 class="mb-0">SMOOTH TRANSITION & WRAP UP</h3>
         <p>
           As projects conclude or evolve, we provide comprehensive handover notes, conduct final debriefs,
@@ -125,7 +125,7 @@
     <div class="row text-center" style="margin-top: 40px;">
       <!-- Step 3 -->
       <div class="col-md-6 animate-box">
-        <img src="{% static 'image/seamlessonboarding.jpg' %}" class="img-responsive img-rounded" alt="Step 3">
+        <img src="{% static 'image/compressed/seamlessonboarding.jpg' %}" class="img-responsive img-rounded" alt="Step 3">
         <h3 class="mb-0">SEAMLESS ONBOARDING</h3>
         <p>
           Once we’re aligned, our team handles everything from contract setup to candidate introductions,
@@ -135,7 +135,7 @@
 
       <!-- Step 4 -->
       <div class="col-md-6 animate-box">
-        <img src="{% static 'image/feed.jpg' %}" class="img-responsive img-rounded" alt="Step 4">
+        <img src="{% static 'image/compressed/feed.jpg' %}" class="img-responsive img-rounded" alt="Step 4">
         <h3 class="mb-0">CONTINUOUS FEEDBACK LOOP</h3>
         <p>
           We value open communication, gathering your insights at every stage to fine-tune performance
@@ -148,7 +148,7 @@
     <div class="row text-center" style="margin-top: 40px;">
       <!-- Step 5 (centered) -->
       <div class="col-md-6 col-md-offset-3 animate-box">
-        <img src="{% static 'image/discover.jpg' %}" class="img-responsive img-rounded" alt="Step 1">
+        <img src="{% static 'image/compressed/discover.jpg' %}" class="img-responsive img-rounded" alt="Step 1">
         <h3 class="mb-0">DISCOVERY & ALIGNMENT</h3>
         <p>
           We kick things off with an informal conversation exploring your objectives, timelines,
@@ -292,10 +292,10 @@
     header.prepend(bg2);
 
     const images = [
-      "{% static 'image/civil.jpg' %}",
-      "{% static 'image/team-developers.jpg' %}",
-      "{% static 'image/electrical.jpg' %}",
-      "{% static 'image/people in meeting.jpg' %}"
+      "{% static 'image/compressed/civil.jpg' %}",
+      "{% static 'image/compressed/team-developers.jpg' %}",
+      "{% static 'image/compressed/electrical.jpg' %}",
+      "{% static 'image/compressed/people in meeting.jpg' %}"
     ];
     let current = 0;
     let showingBg1 = true;
